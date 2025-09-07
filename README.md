@@ -1,4 +1,5 @@
 contoh akun di guthub scret 
+
 [
   {
     "name": "c_user",
@@ -39,3 +40,20 @@ contoh akun di guthub scret
     "path": "/"
   }
 ]
+Nama secret harus pakai pola:
+
+COOKIE_AKUN1
+COOKIE_AKUN2
+COOKIE_AKUN3
+
+
+📌 Aturan:
+
+Nama secret = COOKIE_ + Account (huruf besar semua)
+
+akun1 → jadi COOKIE_AKUN1
+
+akun2 → jadi COOKIE_AKUN2
+
+akun3 → jadi COOKIE_AKUN3
+
