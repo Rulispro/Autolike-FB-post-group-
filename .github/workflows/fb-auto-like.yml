@@ -1,0 +1,45 @@
+name: Facebook Auto Like Multi Akun
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *" # cek tiap jam
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install puppeteer xlsx
+
+      - name: Run bot
+        run: node index.js
+        env:
+          COOKIE_AKUN1: ${{ secrets.COOKIE_AKUN1 }}
+          COOKIE_AKUN2: ${{ secrets.COOKIE_AKUN2 }}
+          COOKIE_AKUN3: ${{ secrets.COOKIE_AKUN3 }}
+          COOKIE_AKUN4: ${{ secrets.COOKIE_AKUN4 }}
+          COOKIE_AKUN5: ${{ secrets.COOKIE_AKUN5 }}
+          COOKIE_AKUN6: ${{ secrets.COOKIE_AKUN6 }}
+          COOKIE_AKUN7: ${{ secrets.COOKIE_AKUN7 }}
+          COOKIE_AKUN8: ${{ secrets.COOKIE_AKUN8 }}
+          COOKIE_AKUN9: ${{ secrets.COOKIE_AKUN9 }}
+          COOKIE_AKUN10: ${{ secrets.COOKIE_AKUN10 }}
+          COOKIE_AKUN11: ${{ secrets.COOKIE_AKUN11 }}
+          COOKIE_AKUN12: ${{ secrets.COOKIE_AKUN12 }}
+          COOKIE_AKUN13: ${{ secrets.COOKIE_AKUN13 }}
+          COOKIE_AKUN14: ${{ secrets.COOKIE_AKUN14 }}
+          COOKIE_AKUN15: ${{ secrets.COOKIE_AKUN15 }}
+          COOKIE_AKUN16: ${{ secrets.COOKIE_AKUN16 }}
+          COOKIE_AKUN17: ${{ secrets.COOKIE_AKUN17 }}
+          COOKIE_AKUN18: ${{ secrets.COOKIE_AKUN18 }}
+          COOKIE_AKUN19: ${{ secrets.COOKIE_AKUN19 }}
+          COOKIE_AKUN20: ${{ secrets.COOKIE_AKUN20 }}
